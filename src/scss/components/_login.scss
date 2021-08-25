@@ -1,0 +1,66 @@
+.login {
+    background-color: $second-bg;
+    order: 2;
+    justify-content: flex-start;
+    padding-#{$left}: 78px;
+    @include breakpoint(wide){
+        padding-#{$left}: 0px;
+        padding: 30px;
+    }
+    @include breakpoint(large){
+        justify-content: center;
+    } 
+    form {
+        width: 100%;
+        @include breakpoint(large){
+            padding: 30px 0;
+        } 
+        fieldset {
+            border: none;
+            padding: 0;
+            width: 100%;
+            .login-title {
+                text-align: center;
+                font-size: 1.75rem;
+                color: $third-txt;
+                padding-bottom: 50px;
+                font-family: $font-second;
+            }
+            .form-group {
+                padding: 10px 0;
+                input {
+                    border: solid 1px $border-bg;
+                    background-color: transparent;
+                    height: 45px;
+                    width: 100%;
+                    border-radius: 4px;
+                    font-size: 1.125rem;
+                    color: $third-txt;
+                    padding: 0 15px;
+                    &::placeholder {
+                        font-size: 1.125rem;
+                        color: $third-txt;
+                        font-family: $font-second;
+                      }
+                }
+            }
+            button {
+                width: 100%;
+                background-color: transparent;
+                border: solid 1px $prim-bg;
+                height: 45px;
+                color: $second-txt;
+                border-radius: 23px;
+                font-size: 1.125rem;
+                margin-top: 30px;
+                font-family: $font-second;
+                cursor: pointer;
+                transition: all 0.2s linear;
+                &:hover {
+                    background-color: $prim-bg;
+                    color: $prim-txt;
+                }
+            }
+        }
+    }
+}

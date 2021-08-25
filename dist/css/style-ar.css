@@ -1,0 +1,283 @@
+@font-face {
+  font-family: droidANR;
+  src: url(../fonts/DroidArabicNaskhRegula.ttf) format("truetype");
+}
+@font-face {
+  font-family: GSTM;
+  src: url(../fonts/ge-ss-two-medium.ttf) format("truetype");
+}
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html * {
+  font-family: droidANR;
+}
+
+body {
+  background-color: #fff;
+  color: #333333;
+  font-size: 16px;
+  direction: rtl;
+  text-align: right;
+}
+
+footer {
+  text-align: center;
+  text-align: center;
+  height: 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+main .container {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex: 1;
+      flex: 1;
+}
+@media (max-width: 1023px) {
+  main .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+main .container .login, main .container .info {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .container .login .inner, main .container .info .inner {
+  width: 100%;
+  max-width: 470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info {
+  background-color: #F7D65C;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 30px 0;
+  padding-left: 78px;
+}
+@media (max-width: 1200px) {
+  .info {
+    padding-left: 0px;
+    padding: 30px;
+  }
+}
+@media (max-width: 1023px) {
+  .info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.info .info-img {
+  height: 100%;
+  width: 100%;
+  max-width: 250px;
+  max-height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.info .info-img img {
+  width: 100%;
+  height: 100%;
+}
+.info .info-name {
+  font-family: GSTM;
+  font-size: 1.875rem;
+  color: #20639C;
+  padding: 15px 0 5px;
+}
+.info .info-title {
+  font-family: GSTM;
+  font-size: 1.125rem;
+  padding-bottom: 40px;
+}
+.info .info-details {
+  text-align: center;
+  padding-bottom: 45px;
+}
+.info .info-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.info .info-social li {
+  margin: 0 7.5px;
+}
+
+.login {
+  background-color: #20639C;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-right: 78px;
+}
+@media (max-width: 1200px) {
+  .login {
+    padding-right: 0px;
+    padding: 30px;
+  }
+}
+@media (max-width: 1023px) {
+  .login {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.login form {
+  width: 100%;
+}
+@media (max-width: 1023px) {
+  .login form {
+    padding: 30px 0;
+  }
+}
+.login form fieldset {
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+.login form fieldset .login-title {
+  text-align: center;
+  font-size: 1.75rem;
+  color: #ffffff;
+  padding-bottom: 50px;
+  font-family: GSTM;
+}
+.login form fieldset .form-group {
+  padding: 10px 0;
+}
+.login form fieldset .form-group input {
+  border: solid 1px #9FBED8;
+  background-color: transparent;
+  height: 45px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 1.125rem;
+  color: #ffffff;
+  padding: 0 15px;
+}
+.login form fieldset .form-group input::-webkit-input-placeholder {
+  font-size: 1.125rem;
+  color: #ffffff;
+  font-family: GSTM;
+}
+.login form fieldset .form-group input::-moz-placeholder {
+  font-size: 1.125rem;
+  color: #ffffff;
+  font-family: GSTM;
+}
+.login form fieldset .form-group input:-ms-input-placeholder {
+  font-size: 1.125rem;
+  color: #ffffff;
+  font-family: GSTM;
+}
+.login form fieldset .form-group input::-ms-input-placeholder {
+  font-size: 1.125rem;
+  color: #ffffff;
+  font-family: GSTM;
+}
+.login form fieldset .form-group input::placeholder {
+  font-size: 1.125rem;
+  color: #ffffff;
+  font-family: GSTM;
+}
+.login form fieldset button {
+  width: 100%;
+  background-color: transparent;
+  border: solid 1px #F7D65C;
+  height: 45px;
+  color: #F7D65C;
+  border-radius: 23px;
+  font-size: 1.125rem;
+  margin-top: 30px;
+  font-family: GSTM;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.login form fieldset button:hover {
+  background-color: #F7D65C;
+  color: #20639C;
+}
+/*# sourceMappingURL=style-ar.css.map */

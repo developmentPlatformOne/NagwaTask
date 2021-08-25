@@ -1,0 +1,18 @@
+{
+  "name": "nagwa-task",
+  "version": "1.0.0",
+  "description": "Nagwa UI Task",
+  "main": "index.js",
+  "repository": "https://github.com/developmentPlatformOne/NagwaTask",
+  "author": "Abdelmonem Salem",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.38.1",
+    "static-server": "^2.2.1"
+  }
+}
