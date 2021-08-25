@@ -1,7 +1,7 @@
 # NagwaTask
 
 ## To Install dependencies:
-## yarn install
+### yarn install
 
 ## To Run the Server: http://localhost:8000/
-gulp watch
+### gulp watch
